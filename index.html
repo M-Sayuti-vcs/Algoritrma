@@ -6,6 +6,22 @@
     <title>FizzBuzz</title>
   </head>
   <body>
-    <script src="script.js"></script>
+    <script>
+      function fizzBuzz(angka) {
+        for (let i = 1; i <= angka; i++) {
+          if (i % 3 == 0 && i % 5 == 0) {
+            console.log('fizzBuzz');
+          } else if (i % 3 == 0) {
+            console.log('fizz');
+          } else if (i % 5 == 0) {
+            console.log('buzz');
+          } else {
+            console.log(i);
+          }
+        }
+      }
+
+      console.log(fizzBuzz(100));
+    </script>
   </body>
 </html>
